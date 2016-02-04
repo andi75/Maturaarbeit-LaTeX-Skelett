@@ -1,0 +1,10 @@
+
+*.aux
+
+*.log
+
+Maturaarbeit.pdf
+
+Maturaarbeit.synctex.gz
+
+*.toc
