@@ -5,21 +5,67 @@
 
 \usepackage[ngerman]{babel}
 \usepackage[latin1]{inputenc}
+\usepackage{blindtext}
+
+%minimale page header & footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt} 
+\fancyhf{}
+\fancyhead[C]{\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+
+%create links in the pdf
+\usepackage[colorlinks]{hyperref}
+
+%a glossary
+\usepackage[toc]{glossaries}
+
+
+\newglossaryentry{computer}
+{
+  name=computer,
+  description={is a programmable machine that receives input,
+               stores and manipulates data, and provides
+               output in a useful format}
+}
+\newglossaryentry{blahblah}
+{
+  name=blahblah,
+  description={\blindtext}
+}
+
+\makeglossaries
+
+
 
 \begin{document}
-\maketitle
+%\maketitle
 \tableofcontents
 
 \chapter{Einleitung}
 \section{Thema}
-Die Wahl des Themas meiner Matura-Arbeit fiel mir...
+\blindtext
 \chapter{Einführung}
 \section{Vorraussetzungen}
 In dieser Arbeit setze ich ein wenig Vorwissen voraus. Dazu gehört....
+\blindtext
 
 \section{Grundlagen}
 \subsection{Die ganz elementaren Sachen}
 Hier wird's beschrieben. Was weniger elementar ist, steht in Abschnitt \ref{etwaswenigerElementar} auf Seite \pageref{etwaswenigerElementar}.
+\blindtext
 \subsection{Ein paar weniger elementare Sachen}
 \label{etwaswenigerElementar}
+
+\blindtext[2]
+
+
+
+\subsection{Und noch das Glossar}
+Die Ausdrücke \gls{computer} und \gls{blahblah} kommen im Glossar vor.
+
+\printglossaries
+
+
 \end{document}
