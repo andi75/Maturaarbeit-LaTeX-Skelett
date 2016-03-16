@@ -35,12 +35,10 @@
   description={\blindtext}
 }
 
-\makeglossaries
-
-
+\makeglossary
 
 \begin{document}
-%\maketitle
+\maketitle
 \tableofcontents
 
 \chapter{Einleitung}
@@ -65,7 +63,7 @@ Hier wird's beschrieben. Was weniger elementar ist, steht in Abschnitt \ref{etwa
 \subsection{Und noch das Glossar}
 Die Ausdrücke \gls{computer} und \gls{blahblah} kommen im Glossar vor.
 
-\printglossaries
+\printglossary[nonumberlist,title=Glossar]
 
 
 \end{document}
