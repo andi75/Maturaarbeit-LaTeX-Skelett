@@ -63,7 +63,7 @@ Zeilenumbrüche muss man sich nicht kümmern, diese entstehen automatisch.
 Eine Abbildung ist auch mit ein paar Zeilen eingefügt. Die Abbildungen werden auch automatisch nummeriert. Lena's Bild ist Abbildung \ref{lena}.
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.9\textwidth]{lena.jpg}
+\includegraphics[width=0.6\textwidth]{lena.jpg}
 \caption{Lena ist eins der Standardbilder aus der Bildverarbeitung}
 \label{lena}
 \end{center}
@@ -74,6 +74,16 @@ Eine Abbildung ist auch mit ein paar Zeilen eingefügt. Die Abbildungen werden au
 Mit \textbackslash ref und \textbackslash pageref können Verweise auf andere Kapitel bzw. Seiten erstellt werden. \emph{Kapitel und Unterkapitel} ist Kapitel \ref{kapitelunterkapitel} auf Seite \pageref{kapitelunterkapitel}.
 
 \blindtext[2]
+
+\section{Literaturverzeichnis}
+Wie Tobias Oetiker \cite{lshort} schreibt, verwendet man \textbackslash cite um Literaturverweise und \textbackslash bibitem um das Literaturverzeichnis zu erstellen. Die \textbackslash bibitem Kommandos können dabei an einem beliebigen Ort, z.B. in einer separaten Datei oder am Ende des Dokuments stehen.
+
+\begin{thebibliography}{99}
+\bibitem{lshort} T. Oetiker:
+\emph{The not so short introduction to \LaTeX{}}, Version 5.01, 2011
+\end{thebibliography}
+
+
 
 \chapter{Für Fortgeschrittene}
 \section{Das Glossar}
